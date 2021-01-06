@@ -1,0 +1,33 @@
+@use '../../../styles/styles';
+
+.main-nav {
+  a {
+    &.nav-link {
+      margin-top: 0.9rem;
+      margin-right: 1.5rem;
+      @include styles.element-format(
+        normal,
+        normal,
+        14px,
+        9px,
+        styles.$nav-text !important
+      );
+    }
+  }
+}
+
+.nav__active {
+  .nav-link {
+    border-bottom: 2px solid styles.$nav-item-border;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .nav__active {
+    .nav-link {
+      border-style: none;
+    }
+  }
+}

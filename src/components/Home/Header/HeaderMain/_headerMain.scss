@@ -1,0 +1,31 @@
+@use '../../../../styles/styles';
+
+.header-main__left {
+  h1 {
+    @include styles.element-format(
+      normal,
+      bold,
+      48px,
+      60px,
+      styles.$header-main-heading-text
+    );
+  }
+  p {
+    @include styles.element-format(
+      normal,
+      normal,
+      16px,
+      24px,
+      styles.$header-main-text
+    );
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header_main-right {
+    img {
+      height:200px;
+      margin-top: 10px
+    }
+  }
+}

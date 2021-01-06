@@ -1,0 +1,36 @@
+@use '../../../styles/styles';
+
+.footer-container {
+  background: styles.$footer-bg;
+  height: 400px;
+}
+
+.contact-form {
+  input {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  input,
+  textarea {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+}
+
+.footer__header {
+  h3 {
+    margin-bottom: 30px;
+    @include styles.element-format(normal, 600, 34px, 43px, styles.$footer-heading-text);
+  }
+  p {
+    @include styles.element-format(normal, 300, 14px, 24px, styles.$footer-body-text);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    height: 600px;
+  }
+}

@@ -1,0 +1,13 @@
+.makeAdmin__input {
+  height: 38px;
+  width: 30%;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 890px) {
+  .makeAdmin__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

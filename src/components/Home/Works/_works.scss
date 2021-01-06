@@ -1,0 +1,68 @@
+@use '../../../styles/styles';
+
+@mixin slick-dots($color) {
+  color: $color;
+  font-size: 0.8rem;
+  border-radius: 50%;
+}
+
+.works-container {
+  background: styles.$works-bg;
+  height: 640px;
+}
+
+.works-header {
+  text-align: center;
+  padding-top: 4rem;
+  h3 {
+    @include styles.element-format(normal, 600, 34px, 43px, styles.$works-header-text);
+  }
+  span {
+    color: styles.$chelsea-cucumbe;
+}}
+
+.slick-slide {
+  height: 330px;
+  width: 468px !important;
+  margin-top: 60px;
+  margin-left: 20px;
+  img {
+    width: 464px;
+  }
+}
+
+.slick-list {
+  height: 400px;
+}
+
+.slick-slide div {
+  outline: none;
+}
+
+.slick-dots {
+  bottom: -80px;
+}
+
+.slick-dots li.slick-active button:before {
+  @include slick-dots(styles.$slick-dots-color);
+}
+
+.slick-dots li button:before {
+  @include slick-dots(styles.$white);
+}
+//responsive
+@media only screen and (max-width: 900px) {
+  .works-container {
+    height: 450px;
+  }
+  .slick-list {
+    height: 200px;
+  }
+  .slick-slide {
+    width: 300px !important;
+    height: 300px;
+    img {
+      width: 300px;
+    }
+  }
+}

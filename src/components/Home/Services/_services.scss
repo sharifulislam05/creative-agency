@@ -1,0 +1,28 @@
+@use '../../../styles/styles';
+
+.services-header {
+  text-align: center;
+  margin-top: 5rem;
+  h3 {
+    @include styles.element-format(normal, 600, 34px, 43px, styles.$services-header);
+  }
+  span {
+    color: styles.$chelsea-cucumbe;
+  }
+}
+
+.service-card {
+  cursor: pointer;
+  img {
+    height: 74px;
+    width: 74px;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    @include styles.element-format(normal, 600, 20px, 16px, styles.$service-card-header-text);
+  }
+  p {
+    @include styles.element-format(normal, 300, 16px, 28px, styles.$service-card-body-text
+    );
+  }
+}

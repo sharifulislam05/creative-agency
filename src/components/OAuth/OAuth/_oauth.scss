@@ -1,0 +1,26 @@
+.login-area {
+  height: 350px;
+  width: 550px;
+  border: 1px solid #ccc;
+  align-items: middle;
+}
+
+.google-btn {
+  width: 400px;
+  height: 51px;
+  background: #ffffff;
+  border: 1px solid #c7c7c7;
+  box-sizing: border-box;
+  border-radius: 57px;
+  outline: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .login-area {
+    height: 200px;
+    width: 350px;
+  }
+  .google-btn {
+    width: 320px;
+  }
+}

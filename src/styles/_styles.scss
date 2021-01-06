@@ -1,0 +1,109 @@
+//all color
+$black: #000000;
+$bunting: #171b4e;
+$ebony: #111430;
+$mine-shaft: #2d2d2d;
+$dove-gray: #707070;
+$tundora: #474747;
+$chelsea-cucumbe: #7ab259;
+$goldenrod: #fbd062;
+$white: #ffff;
+$green: #009444;
+
+//home page all element color
+$nav-text: $tundora;
+$nav-item-border: $green;
+$header-main-heading-text: $ebony;
+$header-main-text: $black;
+$brand-btn-bg: $ebony;
+$services-header: $mine-shaft;
+$service-card-header-text: $ebony;
+$service-card-body-text: $dove-gray;
+$works-header-text: $white;
+$works-bg: $ebony;
+$slick-dots-color: $goldenrod;
+$clients-header-text: $bunting;
+$feedback-body-text: $dove-gray;
+$footer-bg: $goldenrod;
+$footer-heading-text: $mine-shaft;
+$footer-body-text: $dove-gray;
+
+// <-----------------all custom class start----------------->
+.brand-text {
+  color: $chelsea-cucumbe;
+}
+
+.brand-btn {
+  width: 150px;
+  height: 45px;
+  color: $white;
+  background: $brand-btn-bg;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+//form file-input style
+.brand__file-label {
+  width: 50% !important;
+  height: 45px;
+  margin-top: 0.7rem;
+  background: $white;
+  border: 1px solid $green;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+//form input style
+.brand__form {
+  width: 50%;
+  input {
+    height: 45px;
+    margin-top: 10px;
+    padding-left: 1rem;
+  }
+  textarea {
+    margin-top: 10px;
+    padding-left: 1rem;
+  }
+}
+//side bar dashboard
+.brand-sidebar {
+  position: fixed;
+  li {
+    margin-top: 10px;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+//responsive display
+@media only screen and (max-width: 786px) {
+  .brand__form {
+    width: 100%;
+  }
+  .brand__file-label {
+    width: 100% !important;
+    span {
+      font-size: 10px;
+    }
+  }
+}
+.brand-loading {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+//<--------------------------end custom class-------------------->
+
+//text formatter function
+@mixin element-format($fs, $fw, $fSize, $lh, $text) {
+  font-style: $fs;
+  font-weight: $fw;
+  font-size: $fSize;
+  line-height: $lh;
+  color: $text;
+}
+
+.rr {
+  z-index: 99999999;
+}

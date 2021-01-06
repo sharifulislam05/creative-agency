@@ -1,0 +1,49 @@
+@use '../../../styles/styles';
+
+.feedback-container {
+    margin-top: 80px;
+}
+
+.feedbacks__header {
+    margin-bottom: 30px;
+  h3 {
+    @include styles.element-format(normal, 600, 36px, 54px, styles.$clients-header-text);
+  }
+}
+
+.feedback-card {
+   width: 30%;
+  border-radius: 10px;
+  img {
+    height: 64px;
+    width: 64px;
+    margin-right: 5px;
+  }
+}
+
+.feedback-card__header {
+  margin-left: 0.5rem;
+  h3 {
+    @include styles.element-format(normal, bolder, 20px, 30px, styles.$black);
+  }
+  p {
+    @include styles.element-format(normal, 600, 16px, 10px, styles.$black);
+  }
+}
+
+.feedback-card__body {
+  p {
+    @include styles.element-format(normal, normal, 16px, 25px, styles.$feedback-body-text);
+  }
+}
+//responsive
+@media only screen and (max-width: 600px) {
+  .feedback-card {
+    width: 100%;
+  }
+}
+@media only screen and(max-width: 1200px) and (min-width: 600px) {
+  .feedback-card {
+    width: 40%;
+  }
+}

@@ -1,0 +1,17 @@
+.header-container {
+    background: url("../../../assets/images/header-bg.png");
+    background-repeat: no-repeat;
+}
+
+.header-top {
+    height: 684px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-container {
+        background-size: 100% 740px;
+    }
+    .header-top {
+        height: 704px;
+    }
+  }
